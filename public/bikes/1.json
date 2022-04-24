@@ -1,0 +1,52 @@
+[
+    {
+        "id": "1",
+        "type": "A",
+        "status": "normal"
+    },
+    {
+        "id": "2",
+        "type": "A",
+        "status": "normal"
+    },
+    {
+        "id": "3",
+        "type": "A",
+        "status": "unused"
+    },
+    {
+        "id": "4",
+        "type": "A",
+        "status": "normal"
+    },
+    {
+        "id": "5",
+        "type": "A",
+        "status": "abandoned"
+    },
+    {
+        "id": "6",
+        "type": "A",
+        "status": "normal"
+    },
+    {
+        "id": "7",
+        "type": "A",
+        "status": "normal"
+    },
+    {
+        "id": "8",
+        "type": "A",
+        "status": "unused"
+    },
+    {
+        "id": "9",
+        "type": "A",
+        "status": "normal"
+    },
+    {
+        "id": "10",
+        "type": "A",
+        "status": "normal"
+    }
+]
