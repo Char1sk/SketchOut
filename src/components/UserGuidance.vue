@@ -2,10 +2,10 @@
     <div class="all">
         <div class="title">使用帮助</div>
         <div class="content">
-            <el-card class="boxCard" shadow="hover">
-                <!-- <div slot="header" class="clearfix">
+            <!-- <el-card class="boxCard" shadow="hover">
+                <div slot="header" class="clearfix">
                     <span>人脸素描图片检索</span>
-                </div> -->
+                </div>
                 <el-alert slot="header"
                         type="success"
                         center
@@ -23,7 +23,7 @@
                     6. 点击右侧下方按钮，将结果图片下载到本地。                            <br>
                     7. 点击中间红色按钮，可以清除已上传图片和结果图片。                     <br>
                 </div>
-            </el-card>
+            </el-card> -->
             <el-card class="boxCard" shadow="hover">
                 <!-- <div slot="header" class="clearfix">
                     <span>人脸素描照片生成</span>

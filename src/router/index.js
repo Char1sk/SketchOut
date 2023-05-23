@@ -6,7 +6,7 @@ Vue.use(VueRouter);
 const routes = [
     {
         "path": "/",
-        redirect: "/Login"
+        redirect: "/main"
     },
     {
         "path": "/regis",
@@ -49,7 +49,7 @@ const routes = [
                 component: () => import("@/components/AboutUs.vue")
             },
         ],
-        redirect: "/photoRetrieval"
+        redirect: "/photoGeneration"
     }
 ];
 

@@ -16,10 +16,10 @@
                 <el-aside class="mainAside" width="200px">
                     <el-menu default-active="/bikeList" background-color="#fbfbfb" router>
                         
-                        <el-menu-item class="mainAsideItem" index="/photoRetrieval">
+                        <!-- <el-menu-item class="mainAsideItem" index="/photoRetrieval">
                             <i class="el-icon-search"></i>
                             <span slot="title">照片检索</span>
-                        </el-menu-item>
+                        </el-menu-item> -->
                         <el-menu-item class="mainAsideItem" index="/photoGeneration">
                             <i class="el-icon-user"></i>
                             <span slot="title">照片生成</span>
