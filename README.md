@@ -1,1 +1,5 @@
-# 素查SketchOut前端系统
+# Frontend
+
+## Usage
+
+> npm run serve
