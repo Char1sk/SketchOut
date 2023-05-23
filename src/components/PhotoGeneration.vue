@@ -95,8 +95,11 @@
 export default {
     data() {
         return {
-            server: 'http://ali.hughnash.top:5001/',
-            api: 'sketch',
+            api: 'generate',
+            server: 'http://localhost:5001/',
+            // server: 'http://220.167.43.136:5001/',
+            // server: 'http://192.168.2.12:5001/',
+            // server: 'http://ali.hughnash.top:5001/',
             // server: 'http://ali.hughnash.top:5000/',
             // server: 'http://47.99.131.112:5000/',
             uploadImageUrl: '',
@@ -104,6 +107,7 @@ export default {
             fileToUpload: undefined,
             waitingResult: false,
             fileList: [],
+            fileName: '',
             // hideUpload: false,
             // dialogImageUrl: '',
             // dialogVisible: false,
@@ -121,6 +125,8 @@ export default {
             let type = file.raw.type;
             let isImage = (type.substring(0,type.indexOf('/')) === 'image');
             if (isImage) {
+                console.log('Name', file.name)
+                this.fileName = file.name
                 this.uploadImageUrl = URL.createObjectURL(file.raw);
                 this.fileToUpload = file.raw;
             } else {
@@ -137,11 +143,14 @@ export default {
                 let that = this;
                 reader.onload = function(event) {
                     console.log("Loaded:", event)
-                    console.log('data:', this.result);
                     let data = this.result
+                    data = data + ',' + that.fileName
+                    console.log('data:', data);
+                    console.log('type:', typeof(data));
                     let config = {
                         headers: {
-                            'Content-Type': 'application/json'
+                            'Content-Type': 'application/json',
+                            'Access-Control-Allow-Origin': '*'
                         }
                     };
                     that.axios.post(that.server + that.api, data, config)

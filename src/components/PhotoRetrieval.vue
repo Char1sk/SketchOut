@@ -93,9 +93,10 @@
 export default {
     data() {
         return {
-            server: 'http://ali.hughnash.top:5001/',
-            // server: 'http://47.99.131.112:5000/',
             api: 'search',
+            server: 'http://192.168.2.12:5001/',
+            // server: 'http://ali.hughnash.top:5001/',
+            // server: 'http://47.99.131.112:5000/',
             uploadImageUrl: '',
             resultImageUrl: '',
             fileToUpload: undefined,
@@ -138,7 +139,8 @@ export default {
                     let data = this.result
                     let config = {
                         headers: {
-                            'Content-Type': 'application/json'
+                            'Content-Type': 'application/json',
+                            'Access-Control-Allow-Origin': '*'
                         }
                     };
                     that.axios.post(that.server + that.api, data, config)
